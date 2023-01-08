@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/home.md';
+import Script from "next/script";
 
 export default class Home extends Component {
   render() {
@@ -8,8 +9,9 @@ export default class Home extends Component {
     return (
       <>
         <Head>
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+          
         </Head>
+        <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
         <article>
           <h1>{title}</h1>
           <HomeContent />
